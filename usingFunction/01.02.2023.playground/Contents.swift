@@ -1,21 +1,17 @@
 import UIKit
-
-func calculate(operation:String,number1:Int,number2:Int)
-{
-    switch operation{
+func hesapla(_ islem:String, _ sayi1:Int, sayi2:Int){
+    switch islem {
     case "topla":
-        print(number1+number2)
-    case "cikar":
-        print(number1-number2)
-    case "carp":
-        print(number1*number2)
-    case "bol":
-        print(number1/number2)
+        print((sayi1 + sayi2))
+    case "çarp":
+        print((sayi1 * sayi2))
+    case "ortalama":
+        print((sayi1 + sayi2) / 2)
     default:
-        print("gecersiz islem")
+        print("Geçersiz işlem")
     }
 }
-calculate(operation:"carp",number1: 12,number2:2)
+hesapla("topla", 2, sayi2: 4)
 
 
 
